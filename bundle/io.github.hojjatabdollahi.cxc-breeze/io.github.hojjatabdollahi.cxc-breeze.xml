@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bundle id="io.github.hojjatabdollahi.cxc-breeze">
+  <source type="git"
+          url="https://github.com/hojjatabdollahi/cxc-breeze"
+          commit="7024d5ef33927de9b44ae65febc7cd8e3d0a1a45"
+          path="light"/>
+  <developer id="io.github.hojjatabdollahi">
+    <name>Hojjat</name>
+  </developer>
+  <project_license>GPL-3.0-or-later AND LGPL-2.0-or-later AND LGPL-3.0-or-later AND MIT AND Bitstream-Vera AND CC-BY-SA-4.0</project_license>
+  <metadata_license>CC0-1.0</metadata_license>
+</bundle>
