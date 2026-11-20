@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bundle id="dev.soller.constellations.doom-red">
+  <source type="git"
+          url="https://github.com/jackpot51/soller-constellations"
+          commit="d5c649210aafe8c147a53148745c42d2b5cc40b7"
+          path="doom-red" />
+  <developer id="dev.soller">
+    <name>Jeremy Soller</name>
+  </developer>
+  <project_license>GPL-3.0-only</project_license>
+</bundle>
