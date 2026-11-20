@@ -1,6 +1,6 @@
 # The cosmic-bundle-validator release to use.
-validator_version := "0.2.0"
-validator_sha256 := "170156b145d56ef126caea918bb5526e32a56435deac1aa78d011a0d492d3406"
+validator_version := "0.3.0"
+validator_sha256 := "17b9607e5add7c930eefc6ad4c8aea1e2f055966126a1f4658458e8e440eaf99"
 validator_url := "https://github.com/pop-os/cosmic-bundle-validator/releases/download/v" + validator_version + "/cosmic-bundle-validator-x86_64-linux"
 validator := env("VALIDATOR", ".cache/cosmic-bundle-validator-" + validator_version)
 
@@ -11,7 +11,7 @@ build id: fetch-validator
     "{{validator}}" build "bundle/{{id}}/{{id}}.xml" --out out 2>&1 | tee "log/bundle/{{id}}/build.txt"
 
 # Build every new or changed pin, then write out/catalog.xml listing those that built
-repo: fetch-validator
+repo base_url: fetch-validator
     #!/usr/bin/env bash
     set -e
     mkdir -p bundle out log
@@ -39,7 +39,7 @@ repo: fetch-validator
         id="$(basename "${zip}" .zip)"
         [ ! -e "${zip}" ] || [ -f "bundle/${id}/${id}.xml" ] || rm -f "${zip}" "out/${id}.stamp"
     done
-    "{{validator}}" catalog bundle out 2>&1 | tee log/catalog.txt
+    "{{validator}}" catalog bundle out "{{base_url}}" 2>&1 | tee log/catalog.txt
 
 # Build pins changed from origin/master
 build-changed:
