@@ -77,9 +77,9 @@ fetch-validator:
 
 # Copy out/ to the server (any rsync destination).
 sync dest:
-    rsync -rt --include='*.zip' --exclude='*' out/ "{{dest}}/"
+    rsync -rt --include='*.svg' --include='*.zip' --exclude='*' out/ "{{dest}}/"
     rsync -rt out/catalog.xml "{{dest}}/"
-    rsync -rt --delete --include='*.zip' --include=catalog.xml --exclude='*' out/ "{{dest}}/"
+    rsync -rt --delete --include='*.svg' --include='*.zip' --include=catalog.xml --exclude='*' out/ "{{dest}}/"
 
 clean:
     rm -rf log out
