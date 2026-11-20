@@ -1,6 +1,6 @@
 # The cosmic-bundle-validator release to use.
-validator_version := "0.3.0"
-validator_sha256 := "17b9607e5add7c930eefc6ad4c8aea1e2f055966126a1f4658458e8e440eaf99"
+validator_version := "0.3.1"
+validator_sha256 := "193a96fdf0fc253c052f3e3f0d7c311de0c0707fe0105f753719dd6b97dc6cd5"
 validator_url := "https://github.com/pop-os/cosmic-bundle-validator/releases/download/v" + validator_version + "/cosmic-bundle-validator-x86_64-linux"
 validator := env("VALIDATOR", ".cache/cosmic-bundle-validator-" + validator_version)
 
