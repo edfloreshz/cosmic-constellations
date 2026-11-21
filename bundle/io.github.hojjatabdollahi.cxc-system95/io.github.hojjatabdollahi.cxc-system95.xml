@@ -2,9 +2,15 @@
 <bundle id="io.github.hojjatabdollahi.cxc-system95">
   <source type="git"
           url="https://github.com/hojjatabdollahi/cxc-system95"
-          commit="5413a0d0a8a895f3510f0d2e565fb863e2cd6c54"/>
+          commit="2ab00bc9e4ded4d4b16e8aea99b37a46fc673ed5"/>
   <developer id="io.github.hojjatabdollahi">
     <name>Hojjat</name>
   </developer>
   <project_license>GPL-3.0-or-later</project_license>
+  <screenshots>
+    <screenshot type="default">
+      <image>https://github.com/hojjatabdollahi/cxc-system95/releases/download/v1.0.0/desktop.png</image>
+      <caption>The System95 desktop</caption>
+    </screenshot>
+  </screenshots>
 </bundle>
